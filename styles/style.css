@@ -1,0 +1,101 @@
+* {
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    outline: none;
+    outline-color: none;
+}
+
+ :root {
+    --pink: #F50057;
+    --green: #00E676;
+    --yellow: #FFEA00;
+    --cyan: #00E5FF;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/landing.png');
+    font-family: 'Red Hat Display', sans-serif;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+nav {
+    padding-top: 15px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+a {
+    padding: 5px;
+    margin: 50px;
+    text-decoration: none;
+    color: slategray;
+    transition: all 600ms;
+}
+
+a[href='index.html']:hover {
+    color: var(--cyan);
+    border: 3px solid var(--cyan);
+    border-radius: 8px;
+}
+
+a[href='about.html']:hover {
+    color: var(--yellow);
+    border: 3px solid var(--yellow);
+    border-radius: 8px;
+}
+
+a[href='contact.html']:hover {
+    color: var(--green);
+    border: 3px solid var(--green);
+    border-radius: 8px;
+}
+
+a[href='#']:hover {
+    color: var(--pink);
+    border: 3px solid var(--pink);
+    border-radius: 8px;
+}
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 60px;
+    font-size: 48px;
+}
+
+h6 {
+    width: 250px;
+    font-size: 20px;
+}
+
+.getStarted {
+    margin-top: 30px;
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+    font-size: 16px;
+    background-color: var(--pink);
+    color: white;
+    border-radius: 8px;
+    letter-spacing: .5px;
+}
+
+@media (max-width: 800px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 360) {}
