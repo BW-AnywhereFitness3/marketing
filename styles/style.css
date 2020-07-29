@@ -6,6 +6,7 @@
         box-sizing: border-box;
         outline: none;
         outline-color: none;
+        font-family: 'Red Hat Display', sans-serif;
     }
     
      :root {
@@ -14,6 +15,22 @@
         --yellow: #FFEA00;
         --cyan: #00E5FF;
     }
+    /* Shadows for multiple pages */
+    
+    .sm-shadow {
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        border-radius: 2px;
+    }
+    
+    .med-shadow {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        border-radius: 2px;
+    }
+    
+    .text-shadow {
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.24);
+    }
+    /* End of shadows */
     
     body {
         width: 100%;
@@ -31,13 +48,14 @@
     }
     
     nav {
+        margin: auto;
         padding-top: 15px;
         text-align: center;
         line-height: 1.3;
         font-weight: 500;
         font-size: 25px;
         font-family: "Red Hat Display", sans-serif;
-        width: 60%;
+        width: 50%;
         height: 50px;
         padding: 5px;
         background-color: whitesmoke;
@@ -48,21 +66,21 @@
     
     a {
         padding: 5px;
-        margin: 50px;
+        margin: 30px;
         text-decoration: none;
         color: black;
         transition: all 600ms;
     }
     
     a[href='index.html']:hover {
-        color: var(--cyan);
-        border-bottom: 3px solid var(--cyan);
+        color: var(--pink);
+        border-bottom: 3px solid var(--pink);
         border-radius: 2px;
     }
     
     a[href='about.html']:hover {
-        color: var(--yellow);
-        border-bottom: 3px solid var(--yellow);
+        color: var(--cyan);
+        border-bottom: 3px solid var(--cyan);
         border-radius: 2px;
     }
     
@@ -74,7 +92,7 @@
     
     a[href='#']:hover {
         color: var(--pink);
-        border-bottom: 3px solid var(--pink);
+        border-bottom: 3px solid var(--yellow);
         border-radius: 2px;
     }
     
@@ -97,30 +115,114 @@
         font-size: 20px;
         color: #0E1A16;
     }
+    /* Buttons and Button Hover effects */
     
-    .getStarted {
+    .btnAll {
         cursor: pointer;
         margin-top: 30px;
         width: 100px;
-        height: 50px;
+        height: 55px;
+        line-height: 1.2;
         padding: 5px;
         font-size: 16px;
         background-color: var(--pink);
         color: white;
         border-radius: 8px;
         letter-spacing: .5px;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+        transition: all 600ms;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 500;
     }
     
-    .sm-shadow {
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-        border-radius: 2px;
+    .btnGetStarted:hover {
+        background-color: whitesmoke;
+        color: var(--pink);
+        border: 3px solid var(--pink);
     }
     
-    .med-shadow {
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-        border-radius: 2px;
+    .btnContact {
+        background-color: var(--green);
+        font-size: 18px;
     }
+    
+    .btnContact:hover {
+        background-color: whitesmoke;
+        color: var(--green);
+        border: 3px solid var(-green);
+    }
+    /* End Buttons and Button Hover effects */
+    /* Contact Page Starts (except buttons) */
+    
+    .contactImg {
+        width: 100%;
+        height: 100vh;
+        background-image: url('../images/contact.png');
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-size: 100%;
+    }
+    
+    .contactLanding {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        position: relative;
+        top: 50px;
+        left: 75px;
+        width: 475px;
+        height: 450px;
+        background-color: rgba(255, 255, 255, 0.56);
+        text-align: center;
+        border-radius: 8px;
+        transition: all 600ms ease-in;
+    }
+    
+    .contactLanding:hover {
+        background-color: rgba(0, 230, 118, .7);
+    }
+    
+    .contactLanding h1 {
+        font-size: 50px;
+        margin-top: 0px;
+    }
+    
+    .contactBtn {
+        background-color: var(--cyan);
+    }
+    
+    .logoImg {
+        position: relative;
+        float: right;
+        top: -100px;
+        left: 30px;
+        max-width: 22%;
+    }
+    
+    textarea {
+        color: black;
+    }
+    /* About Page Starts */
+    
+    .flexContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+    }
+    
+    .flexContainer div {
+        border: 5px solid black;
+        height: 300px;
+        width: 200px;
+        margin: 20px;
+    }
+    /* About Page Ends */
+    /* Media Queries */
     
     @media (max-width: 800px) {}
     
