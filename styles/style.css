@@ -69,7 +69,7 @@
         margin: 30px;
         text-decoration: none;
         color: black;
-        transition: all 600ms;
+        transition: all 400ms;
     }
     
     a[href='index.html']:hover {
@@ -129,7 +129,7 @@
         color: white;
         border-radius: 8px;
         letter-spacing: .5px;
-        transition: all 600ms;
+        transition: all 400ms;
         font-family: 'Red Hat Display', sans-serif;
         font-weight: 500;
     }
@@ -176,7 +176,7 @@
         background-color: rgba(255, 255, 255, 0.56);
         text-align: center;
         border-radius: 8px;
-        transition: all 600ms ease-in;
+        transition: all 400ms ease-in;
     }
     
     .contactLanding:hover {
@@ -220,14 +220,14 @@
     section.flexContainer1 div {
         height: 400px;
         width: 400px;
-        transition: all 600ms ease-in-out;
+        transition: all 400ms ease-in-out;
     }
     
     .flexContainer1 div img {
         height: 300px;
         width: 300px;
         background-color: bisque;
-        transition: transform 600ms ease-in;
+        transition: transform 400ms ease-in;
         border: 10px solid #D5B23F;
         margin: 20px;
     }
