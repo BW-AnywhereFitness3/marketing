@@ -209,8 +209,6 @@
         /* About Page Starts (except buttons) */
         
         .bodyAbout {
-            background-image: url('../images/aboutUs.jpg');
-            background-blend-mode: screen;
             color: whitesmoke;
             height: 100%;
             width: 100%;
@@ -219,8 +217,8 @@
         
         h1.aboutMeet {
             text-align: center;
-            color: whitesmoke;
             margin-left: 275px;
+            color: rgba(82, 81, 80, .8);
         }
         
         .flexContainer1 {
@@ -275,7 +273,7 @@
             }
             nav {
                 width: 100%;
-                font-size: .8rem;
+                font-size: 14px;
                 height: 5%;
             }
             nav>a {
@@ -308,11 +306,12 @@
             }
             nav {
                 width: 100%;
-                font-size: 15%;
+                font-size: 16px;
                 height: 5%;
             }
             nav>a {
-                margin: 20px;
+                margin: 10px;
+                font-size: 16px;
             }
             section.flexContainer1 {
                 margin-top: 300px;
@@ -328,11 +327,12 @@
             }
             .contactImg {
                 width: 100%;
-                height: 1000%;
+                height: 100%;
             }
         }
         
-        @media (max-width: 1000px) {
+        @media (max-width: 1000px),
+        (max-width: 1400px) {
             body,
             html {
                 height: 100%;
@@ -347,7 +347,7 @@
                 background-size: cover;
             }
             nav {
-                width: 80%;
+                width: 70%;
                 font-size: 1.5em;
                 height: 10%;
             }
@@ -362,5 +362,8 @@
                 align-items: center;
                 width: 100%;
                 height: 50%;
+            }
+            .contactBody {
+                background-color: var(--green);
             }
         }
