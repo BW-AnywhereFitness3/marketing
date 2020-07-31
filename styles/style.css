@@ -1,259 +1,366 @@
-    * {
-        outline: 0;
-        padding: 0;
-        margin: 0;
-        border: 0;
-        box-sizing: border-box;
-        outline: none;
-        outline-color: none;
-        font-family: 'Red Hat Display', sans-serif;
-    }
-    
-     :root {
-        --pink: #F50057;
-        --green: #00E676;
-        --yellow: #FFEA00;
-        --cyan: #00E5FF;
-    }
-    /* Shadows for multiple pages */
-    
-    .sm-shadow {
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-        border-radius: 2px;
-    }
-    
-    .med-shadow {
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-        border-radius: 2px;
-    }
-    
-    .text-shadow {
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.24);
-    }
-    /* End of shadows */
-    
-    html {
-        height: 100%;
-        width: 100%;
-    }
-    
-    header {
-        width: 100%;
-        height: 100vh;
-        font-family: 'Red Hat Display', sans-serif;
-        background-image: url('../images/landing.png');
-        background-repeat: no-repeat;
-        overflow: hidden;
-        background-size: 100%;
-    }
-    
-    nav {
-        margin: auto;
-        padding-top: 15px;
-        text-align: center;
-        line-height: 1.3;
-        font-weight: 500;
-        font-size: 25px;
-        font-family: "Red Hat Display", sans-serif;
-        width: 50%;
-        height: 50px;
-        padding: 5px;
-        background-color: whitesmoke;
-        opacity: .6;
-        border-radius: 6px;
-        color: #0E1A16;
-    }
-    
-    a {
-        padding: 5px;
-        margin: 30px;
-        text-decoration: none;
-        color: black;
-        transition: all 400ms;
-    }
-    
-    a[href='index.html']:hover {
-        color: var(--pink);
-        border-bottom: 3px solid var(--pink);
-        border-radius: 2px;
-    }
-    
-    a[href='about.html']:hover {
-        color: var(--cyan);
-        border-bottom: 3px solid var(--cyan);
-        border-radius: 2px;
-    }
-    
-    a[href='contact.html']:hover {
-        color: var(--green);
-        border-bottom: 3px solid var(--green);
-        border-radius: 2px;
-    }
-    
-    a[href='#']:hover {
-        color: var(--yellow);
-        border-bottom: 3px solid var(--yellow);
-        border-radius: 2px;
-    }
-    
-    .landing {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    
-    h1 {
-        margin-top: 60px;
-        font-size: 60px;
-        color: #0E1A16;
-    }
-    
-    h6 {
-        width: 250px;
-        font-size: 20px;
-        color: #0E1A16;
-    }
-    /* Buttons and Button Hover effects */
-    
-    .btnAll {
-        cursor: pointer;
-        margin-top: 30px;
-        width: 100px;
-        height: 55px;
-        line-height: 1.2;
-        padding: 5px;
-        font-size: 16px;
-        background-color: var(--pink);
-        color: white;
-        border-radius: 8px;
-        letter-spacing: .5px;
-        transition: all 400ms;
-        font-family: 'Red Hat Display', sans-serif;
-        font-weight: 500;
-    }
-    
-    .btnGetStarted:hover {
-        background-color: whitesmoke;
-        color: var(--pink);
-        border: 3px solid var(--pink);
-    }
-    
-    .btnContact {
-        background-color: var(--green);
-        font-size: 18px;
-    }
-    
-    .btnContact:hover {
-        background-color: whitesmoke;
-        color: var(--green);
-        border: 3px solid var(-green);
-    }
-    /* End Buttons and Button Hover effects */
-    /* Contact Page Starts (except buttons) */
-    
-    .contactImg {
-        width: 100%;
-        height: 100vh;
-        background-image: url('../images/contact.png');
-        background-repeat: no-repeat;
-        overflow: hidden;
-        background-size: 100%;
-    }
-    
-    .contactLanding {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        position: relative;
-        top: 50px;
-        left: 75px;
-        width: 475px;
-        height: 450px;
-        background-color: rgba(255, 255, 255, 0.56);
-        text-align: center;
-        border-radius: 8px;
-        transition: all 400ms ease-in;
-    }
-    
-    .contactLanding:hover {
-        background-color: rgba(0, 230, 118, .7);
-    }
-    
-    .contactLanding h1 {
-        font-size: 50px;
-        margin-top: 0px;
-    }
-    
-    .contactBtn {
-        background-color: var(--cyan);
-    }
-    
-    .logoImg {
-        position: relative;
-        float: right;
-        top: -100px;
-        left: 30px;
-        max-width: 22%;
-    }
-    
-    textarea {
-        color: black;
-        /* Contact Page Ends */
-    }
-    /* About Page Starts (except buttons) */
-    
-    main {}
-    
-    .flexContainer1 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 100%;
-        height: 50%;
-    }
-    
-    section.flexContainer1 div {
-        height: 400px;
-        width: 400px;
-        transition: all 400ms ease-in-out;
-    }
-    
-    .flexContainer1 div img {
-        height: 300px;
-        width: 300px;
-        background-color: bisque;
-        transition: transform 400ms ease-in;
-        border: 10px solid #D5B23F;
-        margin: 20px;
-    }
-    
-    p {
-        text-align: center;
-        font-size: 20px;
-    }
-    
-    div img:hover {
-        transform: scale(1.3);
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    }
-    /* About Page Ends */
-    /* Media Queries */
-    
-    @media (max-width: 800px) {
+        * {
+            outline: 0;
+            padding: 0;
+            margin: 0;
+            border: 0;
+            box-sizing: border-box;
+            outline: none;
+            outline-color: none;
+            font-family: 'Red Hat Display', sans-serif;
+        }
+        
+         :root {
+            --pink: #F50057;
+            --green: #00E676;
+            --yellow: #FFEA00;
+            --cyan: #00E5FF;
+        }
+        /* Shadows for multiple pages */
+        
+        .sm-shadow {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            border-radius: 2px;
+        }
+        
+        .med-shadow {
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            border-radius: 2px;
+        }
+        
+        .text-shadow {
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.24);
+        }
+        /* End of shadows */
+        
+        header {
+            width: 100%;
+            height: 100vh;
+            font-family: 'Red Hat Display', sans-serif;
+            background-image: url('../images/landing.png');
+            background-repeat: no-repeat;
+            overflow: hidden;
+            background-size: 100%;
+        }
+        
+        nav {
+            margin: auto;
+            padding-top: 15px;
+            text-align: center;
+            line-height: 1.3;
+            font-weight: 500;
+            font-size: 25px;
+            font-family: "Red Hat Display", sans-serif;
+            width: 50%;
+            height: 50px;
+            padding: 5px;
+            background-color: whitesmoke;
+            opacity: .6;
+            border-radius: 6px;
+            color: #0E1A16;
+        }
+        
+        a {
+            padding: 5px;
+            margin: 30px;
+            text-decoration: none;
+            color: black;
+            transition: all 400ms;
+        }
+        
+        a[href='index.html']:hover {
+            color: var(--pink);
+            border-bottom: 3px solid var(--pink);
+            border-radius: 2px;
+        }
+        
+        a[href='about.html']:hover {
+            color: var(--cyan);
+            border-bottom: 3px solid var(--cyan);
+            border-radius: 2px;
+        }
+        
+        a[href='contact.html']:hover {
+            color: var(--green);
+            border-bottom: 3px solid var(--green);
+            border-radius: 2px;
+        }
+        
+        a[href='#']:hover {
+            color: var(--yellow);
+            border-bottom: 3px solid var(--yellow);
+            border-radius: 2px;
+        }
+        
+        .landing {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        h1 {
+            margin-top: 60px;
+            font-size: 60px;
+            color: #0E1A16;
+        }
+        
+        h6 {
+            width: 250px;
+            font-size: 20px;
+            color: #0E1A16;
+        }
+        /* Buttons and Button Hover effects */
+        
+        .btnAll {
+            cursor: pointer;
+            margin-top: 30px;
+            width: 100px;
+            height: 55px;
+            line-height: 1.2;
+            padding: 5px;
+            font-size: 16px;
+            background-color: var(--pink);
+            color: white;
+            border-radius: 8px;
+            letter-spacing: .5px;
+            transition: all 400ms;
+            font-family: 'Red Hat Display', sans-serif;
+            font-weight: 500;
+        }
+        
+        .btnGetStarted:hover {
+            background-color: whitesmoke;
+            color: var(--pink);
+            border: 3px solid var(--pink);
+        }
+        
+        .btnContact {
+            background-color: var(--green);
+            font-size: 18px;
+        }
+        
+        .btnContact:hover {
+            background-color: whitesmoke;
+            color: var(--green);
+            border: 3px solid var(-green);
+        }
+        /* End Buttons and Button Hover effects */
+        /* Contact Page Starts (except buttons) */
+        
+        .contactImg {
+            width: 100%;
+            height: 100vh;
+            background-image: url('../images/contact.png');
+            background-repeat: no-repeat;
+            overflow: hidden;
+            background-size: 100%;
+        }
+        
+        .contactLanding {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            position: relative;
+            top: 50px;
+            left: 75px;
+            width: 475px;
+            height: 450px;
+            background-color: rgba(255, 255, 255, 0.56);
+            text-align: center;
+            border-radius: 8px;
+            transition: all 400ms ease-in;
+        }
+        
+        .contactLanding:hover {
+            background-color: rgba(0, 230, 118, .7);
+        }
+        
+        .contactLanding h1 {
+            font-size: 50px;
+            margin-top: 0px;
+        }
+        
+        .contactBtn {
+            background-color: var(--cyan);
+        }
+        
+        .logoImg {
+            position: relative;
+            float: right;
+            top: -100px;
+            left: 30px;
+            max-width: 22%;
+        }
+        
+        form>input {
+            height: 25px;
+            width: 300px;
+        }
+        
+        textarea {
+            color: black;
+            height: 100px;
+            width: 300px;
+            /* Contact Page Ends */
+        }
+        /* About Page Starts (except buttons) */
+        
+        .bodyAbout {
+            background-image: url('../images/aboutUs.jpg');
+            background-blend-mode: screen;
+            color: whitesmoke;
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+        }
+        
+        h1.aboutMeet {
+            text-align: center;
+            color: whitesmoke;
+            margin-left: 275px;
+        }
+        
         .flexContainer1 {
             display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            height: 50%;
+            transform: translate(0, -150px);
         }
+        
+        section.flexContainer1 div {
+            text-align: center;
+            height: 400px;
+            width: 400px;
+        }
+        
         .flexContainer1 div img {
+            height: 300px;
             width: 300px;
-            height: 200px;
+            transition: all 400ms ease-in;
+            border: 10px solid rgb(0, 229, 255, .5);
+            border-radius: 8px;
+            margin: 10px;
+            object-fit: cover;
         }
-    }
-    
-    @media (max-width: 500px) {}
-    
-    @media (max-width: 360) {}
+        
+        p {
+            text-align: center;
+            font-size: 20px;
+            background-color: rgba(82, 81, 80, .7);
+            border-radius: 8px;
+            margin-block-end: 0px;
+        }
+        /* About Page Ends */
+        /* Media Queries */
+        
+        @media (max-width: 500px) {
+            body,
+            html {
+                height: 100%;
+                width: 100%;
+            }
+            header {
+                width: 100%;
+                height: 100%;
+                font-family: 'Red Hat Display', sans-serif;
+                background-image: url('../images/landing.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            nav {
+                width: 100%;
+                font-size: .8rem;
+                height: 5%;
+            }
+            nav>a {
+                margin: 0px;
+            }
+            section.flexContainer1 {
+                margin-top: 300px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 100%;
+                height: 50%;
+            }
+        }
+        
+        @media (max-width: 800px) {
+            body,
+            html {
+                height: 100%;
+                width: 100%;
+            }
+            header {
+                width: 100%;
+                height: 100%;
+                font-family: 'Red Hat Display', sans-serif;
+                background-image: url('../images/landing.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            nav {
+                width: 100%;
+                font-size: 15%;
+                height: 5%;
+            }
+            nav>a {
+                margin: 20px;
+            }
+            section.flexContainer1 {
+                margin-top: 300px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 100%;
+                height: 50%;
+            }
+            .aboutMeet {
+                text-align: left;
+            }
+            .contactImg {
+                width: 100%;
+                height: 1000%;
+            }
+        }
+        
+        @media (max-width: 1000px) {
+            body,
+            html {
+                height: 100%;
+                width: 100%;
+            }
+            header {
+                width: 100%;
+                height: 100%;
+                font-family: 'Red Hat Display', sans-serif;
+                background-image: url('../images/landing.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            nav {
+                width: 80%;
+                font-size: 1.5em;
+                height: 10%;
+            }
+            nav>a {
+                margin: 10px;
+            }
+            section.flexContainer1 {
+                margin-top: 300px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 100%;
+                height: 50%;
+            }
+        }
